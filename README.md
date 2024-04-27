@@ -1,0 +1,2 @@
+# VoiceControllHealthcareApp
+リアルタイムで音声を文字化し、どの選択肢に類似しているかで画面の操作を行えるSwiftAPP
