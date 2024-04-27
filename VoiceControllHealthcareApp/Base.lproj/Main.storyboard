@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kc9-4O-RSQ">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--First Question View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="FirstQuestionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="FirstQuestionViewController" customModule="VoiceControllHealthcareApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSM-wH-Rzr">
+                                <rect key="frame" x="96.666666666666686" y="194" width="200" height="75"/>
+                                <color key="backgroundColor" red="0.51903180500000001" green="0.92939150329999998" blue="0.76761420339999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="8Fj-FS-zTV"/>
+                                    <constraint firstAttribute="width" constant="200" id="Bac-q2-fkk"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="健康です">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="GoodButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JuF-U9-RxN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPe-px-hxZ">
+                                <rect key="frame" x="96.666666666666686" y="299" width="200" height="75"/>
+                                <color key="backgroundColor" red="0.51903180500000001" green="0.92939150329999998" blue="0.76761420339999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="gT3-Jh-mtC"/>
+                                    <constraint firstAttribute="width" constant="200" id="lB3-la-o8d"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="具合が悪い">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="BadButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VsS-V4-NJA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Qh-rb-mfB">
+                                <rect key="frame" x="96.666666666666686" y="534" width="200" height="75"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="7wZ-iR-i1l"/>
+                                    <constraint firstAttribute="height" constant="75" id="rov-ks-rrc"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="音声操作">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="inputVoiceButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cos-Wj-aUp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今日の調子はどうですか？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Wt-GX-u9l">
+                                <rect key="frame" x="101" y="123" width="191" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="音声入力が可能です" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bs7-jo-mv5">
+                                <rect key="frame" x="76.666666666666686" y="404" width="240" height="100"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="i5x-fN-Izb"/>
+                                    <constraint firstAttribute="height" constant="100" id="xkH-rg-1cT"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3Qh-rb-mfB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Kx-w8-pcH"/>
+                            <constraint firstItem="9Wt-GX-u9l" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="5kw-LK-DQ8"/>
+                            <constraint firstItem="cPe-px-hxZ" firstAttribute="top" secondItem="aSM-wH-Rzr" secondAttribute="bottom" constant="30" id="BNO-3g-lrm"/>
+                            <constraint firstItem="bs7-jo-mv5" firstAttribute="top" secondItem="cPe-px-hxZ" secondAttribute="bottom" constant="30" id="OaX-zV-ce6"/>
+                            <constraint firstItem="3Qh-rb-mfB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ps8-X7-gbn"/>
+                            <constraint firstItem="cPe-px-hxZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XJd-yo-Aau"/>
+                            <constraint firstItem="aSM-wH-Rzr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cll-7N-u1m"/>
+                            <constraint firstItem="9Wt-GX-u9l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hpK-tN-Cn0"/>
+                            <constraint firstItem="3Qh-rb-mfB" firstAttribute="top" secondItem="bs7-jo-mv5" secondAttribute="bottom" constant="30" id="jor-L8-hqH"/>
+                            <constraint firstItem="bs7-jo-mv5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nVC-N3-5QG"/>
+                            <constraint firstItem="aSM-wH-Rzr" firstAttribute="top" secondItem="9Wt-GX-u9l" secondAttribute="bottom" constant="50" id="ztE-gX-aKZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Puk-EN-VRW"/>
+                    <connections>
+                        <outlet property="inputVoiceButton" destination="3Qh-rb-mfB" id="row-ZT-7JG"/>
+                        <outlet property="voiceTextView" destination="bs7-jo-mv5" id="xpb-bX-qp2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="712" y="5"/>
+        </scene>
+        <!--Second Question View Controller-->
+        <scene sceneID="xV1-zK-cTX">
+            <objects>
+                <viewController storyboardIdentifier="SecondQuestionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DM5-vO-QaB" customClass="SecondQuestionViewController" customModule="VoiceControllHealthcareApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UF5-cy-Y8l">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="具体的な症状を教えてください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEd-3H-Qco">
+                                <rect key="frame" x="85.333333333333329" y="79" width="222.66666666666669" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ABh-Fx-h8r"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tEd-3H-Qco" firstAttribute="centerX" secondItem="UF5-cy-Y8l" secondAttribute="centerX" id="Qtr-n5-1a3"/>
+                            <constraint firstItem="tEd-3H-Qco" firstAttribute="top" secondItem="ABh-Fx-h8r" secondAttribute="top" constant="20" id="ya9-fl-ZBn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="od7-fp-x7H"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F4b-31-7zT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1440" y="5"/>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="jVL-Gp-rj3">
+            <objects>
+                <viewController storyboardIdentifier="ResultViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fLZ-Xu-Cto" customClass="ResultViewController" customModule="VoiceControllHealthcareApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ML4-uM-TLM">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="健康で何よりです！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9M-bX-5WB">
+                                <rect key="frame" x="125.00000000000001" y="79" width="143.33333333333337" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WYW-rh-BDA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="i9M-bX-5WB" firstAttribute="centerX" secondItem="ML4-uM-TLM" secondAttribute="centerX" id="37y-wc-a3E"/>
+                            <constraint firstItem="i9M-bX-5WB" firstAttribute="top" secondItem="WYW-rh-BDA" secondAttribute="top" constant="20" id="jJx-2r-Uia"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="RRi-Jx-fg8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iKJ-Vm-VDM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2141" y="5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ebx-96-ctC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kc9-4O-RSQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="X7o-sg-QBg">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="2Da-Sw-xhm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6y9-5Z-Cgl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-49.618320610687022" y="4.9295774647887329"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
